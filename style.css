@@ -1,11 +1,28 @@
-body { 
-    margin: 0;
-    font-family: Arial, sans-serif; 
-    background: #dcdcdc; 
-    color: #000000;
-} 
+* {
+    box-sizing: border-box;
+}
 
-/* Menu */
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #dcdcdc;
+    color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* MENU */
 .menu {
     background: #000000;
     padding: 20px; 
@@ -46,7 +63,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* Banner */
+/* BANNER */
 .banner { 
     background: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7") center/cover;
     height: 300px;
@@ -67,7 +84,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Cards da Home */
+/* CARDS DA HOME */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +132,7 @@ body {
     text-decoration: none; 
 }
 
-/* Páginas dos carros */
+/* PÁGINAS DOS CARROS */
 .info {
     text-align: center;
     padding: 30px 20px;
@@ -129,7 +146,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* Imagem principal dos carros */
+/* IMAGEM PRINCIPAL DA FERRARI, PORSCHE E LAMBORGHINI */
 .info img {
     width: 90%;
     max-width: 650px;
@@ -141,7 +158,7 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Texto das páginas */
+/* TEXTO DAS PÁGINAS */
 .info p {
     font-size: 18px;
     line-height: 1.7;
@@ -149,14 +166,14 @@ body {
     margin-top: 25px;
 }
 
-/* Subtítulo */
+/* TÍTULO SECUNDÁRIO */
 .info h2 {
     color: #222;
     font-size: 20px;
     line-height: 1.5;
 }
 
-/* História da logo */
+/* HISTÓRIA DA LOGO */
 .logo {
     text-align: center;
     padding: 30px 20px;
@@ -170,7 +187,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* Imagens das logos  */
+/* IMAGENS DAS LOGOS */
 .logo img,
 .logomarca {
     width: 300px;
@@ -183,14 +200,14 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* Texto sobre as logos */
+/* TEXTO SOBRE AS LOGOS */
 .logo p {
     font-size: 17px;
     line-height: 1.7;
     text-align: justify;
 }
 
-/* Carro Bugatti */
+/* BUGATTI */
 .hero-carro { 
     text-align: center;
     padding: 30px 20px;
@@ -220,7 +237,7 @@ body {
     text-align: justify;
 }
 
-/* Fichas e Sessões */
+/* FICHAS E SEÇÕES */
 .ficha-tecnica,
 .sobre-site,
 .objetivos,
@@ -246,7 +263,7 @@ body {
     line-height: 1.6;
 }
 
-/* Formulário */
+/* FORMULÁRIO */
 .contato form { 
     display: flex; 
     flex-direction: column; 
@@ -283,7 +300,7 @@ body {
     transform: scale(1.02);
 }
 
-/* Botão de Voltar pra Home*/
+/* BOTÃO VOLTAR */
 .voltar {
     display: inline-block;
     margin: 20px; 
@@ -298,7 +315,7 @@ body {
     text-decoration: underline;
 }
 
-/* Rodapé */
+/* RODAPÉ */
 .footer {
     background: #111; 
     text-align: center;
@@ -311,7 +328,188 @@ body {
     margin: 5px;
 }
 
-/* Listas */
+/* LISTAS */
 ul {
     line-height: 1.8;
+}
+
+
+
+/* TABLETS */
+
+@media (max-width: 768px) {
+
+    .menu {
+        padding: 15px;
+    }
+
+    .menu h1 {
+        font-size: 28px;
+    }
+
+    .menu nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu nav a {
+        margin: 4px;
+        padding: 9px 12px;
+    }
+
+    .banner {
+        height: 250px;
+        padding: 15px;
+    }
+
+    .banner h2 {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .container {
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .carro {
+        width: 45%;
+    }
+
+    .info,
+    .logo,
+    .hero-carro {
+        padding: 25px 15px;
+    }
+
+    .info img,
+    .hero-carro img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .ficha-tecnica,
+    .sobre-site,
+    .objetivos,
+    .contato {
+        margin: 15px;
+    }
+}
+
+
+
+/* CELULARES */
+
+@media (max-width: 480px) {
+
+    .menu {
+        padding: 15px 10px;
+    }
+
+    .menu h1 {
+        font-size: 24px;
+    }
+
+    .menu p {
+        font-size: 14px;
+    }
+
+    /* MENU VERTICAL */
+    .menu nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 15px;
+    }
+
+    .menu nav a {
+        display: block;
+        margin: 4px 0;
+        padding: 10px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 220px;
+        padding: 10px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+        padding: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* CARDS EM UMA ÚNICA COLUNA */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .carro {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .carro img {
+        height: 190px;
+    }
+
+    /* PÁGINAS DOS CARROS */
+    .info,
+    .logo,
+    .hero-carro {
+        padding: 20px 15px;
+    }
+
+    .info h1,
+    .hero-carro h1 {
+        font-size: 24px;
+    }
+
+    .info img,
+    .hero-carro img {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .info p,
+    .hero-carro p,
+    .logo p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* LOGOS */
+    .logo img,
+    .logomarca {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    /* SEÇÕES */
+    .ficha-tecnica,
+    .sobre-site,
+    .objetivos,
+    .contato {
+        margin: 10px;
+        padding: 18px;
+    }
+
+    /* FORMULÁRIO */
+    .contato input,
+    .contato textarea {
+        width: 100%;
+    }
+
+    /* RODAPÉ */
+    .footer {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
 }
