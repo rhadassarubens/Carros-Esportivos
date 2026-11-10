@@ -513,3 +513,17 @@ ul {
         font-size: 14px;
     }
 }
+
+/* EFEITO 3D NOS CARDS DOS CARROS */
+
+.carro {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.15s ease-out,
+                box-shadow 0.3s ease;
+}
+
+/* SOMBRA PREMIUM */
+.carro:hover {
+    box-shadow: 0 20px 40px rgba(180, 0, 0, 0.4);
+}
