@@ -1,3 +1,5 @@
+/* CONFIGURAÇÕES GERAIS */
+
 * {
     box-sizing: border-box;
 }
@@ -22,30 +24,32 @@ main {
     flex: 1;
 }
 
+
 /* MENU */
+
 .menu {
     background: #000000;
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-} 
+}
 
-.menu h1 { 
+.menu h1 {
     margin: 0;
     color: #f90505;
     font-size: 32px;
-} 
+}
 
-.menu p { 
+.menu p {
     margin: 5px 0 0;
-    color: #c52323; 
-} 
+    color: #c52323;
+}
 
-.menu nav { 
-    margin-top: 20px; 
-} 
+.menu nav {
+    margin-top: 20px;
+}
 
-.menu nav a { 
+.menu nav a {
     display: inline-block;
     color: white;
     background: #540404;
@@ -57,62 +61,74 @@ main {
     transition: 0.3s;
 }
 
-.menu nav a:hover { 
+.menu nav a:hover {
     background: #f90505;
     color: white;
     transform: translateY(-3px);
 }
 
+
 /* BANNER */
-.banner { 
+
+.banner {
     background: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7") center/cover;
     height: 300px;
+
     display: flex;
     align-items: center;
-    justify-content: center; 
-    text-align: center; 
-} 
+    justify-content: center;
+    text-align: center;
+}
 
 .banner h2 {
-    background: rgba(0, 0, 0, 0.65); 
+    background: rgba(0, 0, 0, 0.65);
     color: white;
-    padding: 20px; 
-    border-radius: 10px; 
-    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+
 /* CARDS DA HOME */
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
-    padding: 40px 20px; 
+    padding: 40px 20px;
 }
 
 .carro {
-    background: #fff7f7; 
+    background: #fff7f7;
     color: black;
     width: 250px;
-    border-radius: 12px; 
+    border-radius: 12px;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
     border: 1px solid #eeeeee;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    /* Preparação para o efeito 3D */
+    transform-style: preserve-3d;
+    will-change: transform;
+
+    transition: box-shadow 0.3s ease;
 }
 
-.carro:hover { 
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(180, 0, 0, 0.3);
+/* Destaque dos cards */
+
+.carro:hover {
+    box-shadow: 0 20px 40px rgba(180, 0, 0, 0.4);
 }
 
 .carro img {
     width: 100%;
-    height: 160px; 
+    height: 160px;
     object-fit: cover;
     display: block;
 }
@@ -127,12 +143,14 @@ main {
     line-height: 1.5;
 }
 
-.carro a { 
-    color: rgb(28, 26, 26); 
-    text-decoration: none; 
+.carro a {
+    color: rgb(28, 26, 26);
+    text-decoration: none;
 }
 
+
 /* PÁGINAS DOS CARROS */
+
 .info {
     text-align: center;
     padding: 30px 20px;
@@ -146,7 +164,6 @@ main {
     margin-bottom: 25px;
 }
 
-/* IMAGEM PRINCIPAL DA FERRARI, PORSCHE E LAMBORGHINI */
 .info img {
     width: 90%;
     max-width: 650px;
@@ -158,7 +175,6 @@ main {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* TEXTO DAS PÁGINAS */
 .info p {
     font-size: 18px;
     line-height: 1.7;
@@ -166,14 +182,15 @@ main {
     margin-top: 25px;
 }
 
-/* TÍTULO SECUNDÁRIO */
 .info h2 {
     color: #222;
     font-size: 20px;
     line-height: 1.5;
 }
 
-/* HISTÓRIA DA LOGO */
+
+/* HISTÓRIA DAS LOGOS */
+
 .logo {
     text-align: center;
     padding: 30px 20px;
@@ -187,7 +204,6 @@ main {
     margin-bottom: 25px;
 }
 
-/* IMAGENS DAS LOGOS */
 .logo img,
 .logomarca {
     width: 300px;
@@ -200,15 +216,16 @@ main {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* TEXTO SOBRE AS LOGOS */
 .logo p {
     font-size: 17px;
     line-height: 1.7;
     text-align: justify;
 }
 
+
 /* BUGATTI */
-.hero-carro { 
+
+.hero-carro {
     text-align: center;
     padding: 30px 20px;
     max-width: 1000px;
@@ -237,15 +254,17 @@ main {
     text-align: justify;
 }
 
+
 /* FICHAS E SEÇÕES */
+
 .ficha-tecnica,
 .sobre-site,
 .objetivos,
 .contato {
     background: #351313;
     color: floralwhite;
-    margin: 20px; 
-    padding: 25px; 
+    margin: 20px;
+    padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
@@ -263,15 +282,18 @@ main {
     line-height: 1.6;
 }
 
+
 /* FORMULÁRIO */
-.contato form { 
-    display: flex; 
-    flex-direction: column; 
+
+.contato form {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
- 
+
 .contato input,
 .contato textarea {
+    width: 100%;
     padding: 12px;
     border-radius: 8px;
     border: none;
@@ -283,10 +305,10 @@ main {
     min-height: 120px;
     resize: vertical;
 }
- 
+
 .contato button {
     background: #ff3c00;
-    color: white; 
+    color: white;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -300,12 +322,26 @@ main {
     transform: scale(1.02);
 }
 
+/* Mensagem de confirmação do JavaScript */
+
+.mensagem-sucesso {
+    background: #e0ffe5;
+    color: #17652b;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
 /* BOTÃO VOLTAR */
+
 .voltar {
     display: inline-block;
-    margin: 20px; 
-    color: #ff3c00; 
-    text-decoration: none; 
+    margin: 20px;
+    color: #ff3c00;
+    text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -315,12 +351,14 @@ main {
     text-decoration: underline;
 }
 
+
 /* RODAPÉ */
+
 .footer {
-    background: #111; 
+    background: #111;
     text-align: center;
-    padding: 20px; 
-    margin-top: 30px; 
+    padding: 20px;
+    margin-top: 30px;
     color: #ff3c00;
 }
 
@@ -328,11 +366,12 @@ main {
     margin: 5px;
 }
 
+
 /* LISTAS */
+
 ul {
     line-height: 1.8;
 }
-
 
 
 /* TABLETS */
@@ -398,7 +437,6 @@ ul {
 }
 
 
-
 /* CELULARES */
 
 @media (max-width: 480px) {
@@ -415,7 +453,8 @@ ul {
         font-size: 14px;
     }
 
-    /* MENU VERTICAL */
+    /* Menu vertical */
+
     .menu nav {
         display: flex;
         flex-direction: column;
@@ -429,7 +468,8 @@ ul {
         padding: 10px;
     }
 
-    /* BANNER */
+    /* Banner */
+
     .banner {
         height: 220px;
         padding: 10px;
@@ -441,7 +481,8 @@ ul {
         letter-spacing: 1px;
     }
 
-    /* CARDS EM UMA ÚNICA COLUNA */
+    /* Cards em uma coluna */
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -458,7 +499,8 @@ ul {
         height: 190px;
     }
 
-    /* PÁGINAS DOS CARROS */
+    /* Páginas dos carros */
+
     .info,
     .logo,
     .hero-carro {
@@ -484,7 +526,8 @@ ul {
         line-height: 1.6;
     }
 
-    /* LOGOS */
+    /* Logos */
+
     .logo img,
     .logomarca {
         width: 100%;
@@ -492,7 +535,8 @@ ul {
         height: auto;
     }
 
-    /* SEÇÕES */
+    /* Seções */
+
     .ficha-tecnica,
     .sobre-site,
     .objetivos,
@@ -501,29 +545,57 @@ ul {
         padding: 18px;
     }
 
-    /* FORMULÁRIO */
+    /* Formulário */
+
     .contato input,
     .contato textarea {
         width: 100%;
     }
 
-    /* RODAPÉ */
+    /* Rodapé */
+
     .footer {
         padding: 15px 10px;
         font-size: 14px;
     }
 }
 
-/* EFEITO 3D NOS CARDS DOS CARROS */
 
+/* ACESSIBILIDADE: REDUZIR ANIMAÇÕES */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .carro,
+    .menu nav a,
+    .contato button {
+        transition: none;
+    }
+
+}
+
+/* CONTORNO VERMELHO DOS CARDS */
 .carro {
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition: transform 0.15s ease-out,
-                box-shadow 0.3s ease;
+    border: 2px solid #d00000;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
 }
 
-/* SOMBRA PREMIUM */
+/* DESTAQUE AO PASSAR O MOUSE */
 .carro:hover {
-    box-shadow: 0 20px 40px rgba(180, 0, 0, 0.4);
+    border-color: #ff0000;
+    box-shadow: 0 15px 35px rgba(220, 0, 0, 0.45);
 }
+
+/* MOVIMENTO AO TOCAR NO CELULAR */
+@media (hover: none) and (pointer: coarse) {
+    .carro:active {
+        transform: perspective(900px)
+                   rotateX(3deg)
+                   rotateY(-3deg)
+                   scale(1.03);
+
+        border-color: #ff0000;
+        box-shadow: 0 15px 35px rgba(220, 0, 0, 0.5);
+    }
+    }
