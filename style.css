@@ -25,7 +25,7 @@ main {
 }
 
 
-/* MENU */
+/* Menu */
 
 .menu {
     background: #000000;
@@ -68,7 +68,7 @@ main {
 }
 
 
-/* BANNER */
+/* Banner */
 
 .banner {
     background: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7") center/cover;
@@ -91,7 +91,7 @@ main {
 }
 
 
-/* CARDS DA HOME */
+/* Cards da home */
 
 .container {
     display: flex;
@@ -149,7 +149,7 @@ main {
 }
 
 
-/* PÁGINAS DOS CARROS */
+/* Página dos carros */
 
 .info {
     text-align: center;
@@ -189,7 +189,7 @@ main {
 }
 
 
-/* HISTÓRIA DAS LOGOS */
+/* História das logos*/
 
 .logo {
     text-align: center;
@@ -223,7 +223,7 @@ main {
 }
 
 
-/* BUGATTI */
+/* Bugatti */
 
 .hero-carro {
     text-align: center;
@@ -255,7 +255,7 @@ main {
 }
 
 
-/* FICHAS E SEÇÕES */
+/* Fichas e seções */
 
 .ficha-tecnica,
 .sobre-site,
@@ -283,7 +283,7 @@ main {
 }
 
 
-/* FORMULÁRIO */
+/* Formulário */
 
 .contato form {
     display: flex;
@@ -352,7 +352,7 @@ main {
 }
 
 
-/* RODAPÉ */
+/* Footer */
 
 .footer {
     background: #111;
@@ -367,14 +367,14 @@ main {
 }
 
 
-/* LISTAS */
+/* Listas */
 
 ul {
     line-height: 1.8;
 }
 
 
-/* TABLETS */
+/* Tablets */
 
 @media (max-width: 768px) {
 
@@ -437,7 +437,7 @@ ul {
 }
 
 
-/* CELULARES */
+/* Celulares */
 
 @media (max-width: 480px) {
 
@@ -561,7 +561,7 @@ ul {
 }
 
 
-/* ACESSIBILIDADE: REDUZIR ANIMAÇÕES */
+/* Acessibilidade: reduzir animações */
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -573,7 +573,7 @@ ul {
 
 }
 
-/* CONTORNO VERMELHO DOS CARDS */
+/* Contorno vermelho dos cards */
 .carro {
     border: 2px solid #d00000;
     transition: transform 0.25s ease,
@@ -581,13 +581,13 @@ ul {
                 border-color 0.25s ease;
 }
 
-/* DESTAQUE AO PASSAR O MOUSE */
+/* Destaque ao passar o mouse */
 .carro:hover {
     border-color: #ff0000;
     box-shadow: 0 15px 35px rgba(220, 0, 0, 0.45);
 }
 
-/* MOVIMENTO AO TOCAR NO CELULAR */
+/* Movimento ao tocar no celular */
 @media (hover: none) and (pointer: coarse) {
     .carro:active {
         transform: perspective(900px)
